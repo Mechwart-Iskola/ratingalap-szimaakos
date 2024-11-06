@@ -1,0 +1,105 @@
+
+
+:root{
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+    --Star-contaniner: hsl(213, 18%, 24%);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Overpass", sans-serif;
+    background-color: var(--Very-Dark-Blue);
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+
+}
+
+.container{
+    background-color: var(--Dark-Blue);
+    width: 370px;
+    padding: 30px;
+    border-radius: 30px;
+}
+
+.star-container{
+    background-color: var(--Star-contaniner);
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+h1{
+    color: var(--White);
+    font-weight: 60%;
+    font-size: 1.9rem;
+    margin-bottom: 10px;
+}
+
+p{
+    font-size: 15px;
+    color: var(--Light-Grey);
+    margin-bottom: 20px;
+
+}
+
+.button-group{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.button-group button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--Star-contaniner);
+    color: var(--Light-Grey);
+    cursor: pointer;
+}
+
+.button-group button:hover{
+    background-color: var(--Light-Grey);
+    color: var(--Star-contaniner);
+}
+
+.button-group button:focus{
+    background-color: var(--Orange);
+    color: var(--Star-contaniner);
+}
+
+.btn{
+    width: 100%;
+    padding: 8px;
+    border-radius: 30px;
+    border: none;
+    background-color: var(--Orange);
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.btn:hover{
+    background-color: var(--Light-Grey);
+    color: var(--Dark-Blue);
+}
+
